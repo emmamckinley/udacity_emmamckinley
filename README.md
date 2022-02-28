@@ -11,8 +11,8 @@ For this project, you will pick a dataset and answer 3 questions using the data.
 
 | Data        | Description           | Source           | 
 | ------------- |:-------------:| :-------------:| 
-| listings.csv     | full descriptions and average review score | https://www.kaggle.com/airbnb/seattle | 
-| calendar.csv     | listing id and the price and availability for that day      | https://www.kaggle.com/airbnb/seattle |  
+| listings.csv     |full descriptions and average review score| https://www.kaggle.com/airbnb/seattle | 
+| calendar.csv     |listing id and the price and availability for that day| https://www.kaggle.com/airbnb/seattle |  
 
 
 # Notebooks
@@ -20,10 +20,10 @@ For this project, you will pick a dataset and answer 3 questions using the data.
 
 | Notebook        | Description           |
 | ------------- |:-------------:|
-| 0_data_prep  | This notebook uses listings.csv as an input and outputs listings_clean.csv which is a clean version for modelling.   | 
-| 1_q1    | This notebook uses calendar.csv as an input and outputs a graph to answer q1.  | 
-| 1_q2   | This notebook uses listings_clean.csv as an input and outputs a graph to answer q2.    | 
-| 1_q3    | This notebook uses listings_clean.csv as an input and outputs a valur to answer q3.   | 
+| 0_data_prep  |This notebook uses listings.csv as an input and outputs listings_clean.csv which is a clean version for modelling.| 
+| 1_q1    |This notebook uses calendar.csv as an input and outputs a graph to answer q1.| 
+| 1_q2   |This notebook uses listings_clean.csv as an input and outputs a graph to answer q2.| 
+| 1_q3    |This notebook uses listings_clean.csv as an input and outputs a valur to answer q3.| 
 
 # Blog post
 
