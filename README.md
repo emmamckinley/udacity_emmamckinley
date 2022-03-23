@@ -36,6 +36,8 @@ https://medium.com/@emma.mckinley/airbnb-seattle-advanced-analytics-72804206934f
 
 For this project, 
 
+summary of the project, how to run the Python scripts and web app, and an explanation of the files in the repository
+
 ### Data 
 
 | Data        | Description           | 
