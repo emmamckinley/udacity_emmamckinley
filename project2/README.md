@@ -1,6 +1,11 @@
 # Disaster Response Pipeline Project
 
-This file contains instructions to build the web app. For full details on the project and files contained here see main README.md in the repository.
+This file contains instructions to build the web app. 
+
+```diff
+- For full details on the project and file descriptions see main README.md in the repository.
+
+```
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
