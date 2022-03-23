@@ -1,13 +1,13 @@
 # udacity_emmamckinley
 Udacity Data Science nanodegree
-## Project 1: Write a Data science blog
+# Project 1: Write a Data science blog
 
 For this project, you will pick a dataset and answer 3 questions using the data. My questions are:
 1. Is there seasonality in price?
 2. Does price vary by neighbourhood?
 3. What price should I set my property at in order to be similar to the others?
 
-# Data 
+### Data 
 
 | Data        | Description           | Source           | 
 | ------------- |-------------|-------------| 
@@ -15,7 +15,7 @@ For this project, you will pick a dataset and answer 3 questions using the data.
 | calendar.csv     |Listing id and the price and availability for that day| https://www.kaggle.com/airbnb/seattle |  
 
 
-# Notebooks
+### Notebooks
 
 
 | Notebook        | Description           |
@@ -25,18 +25,18 @@ For this project, you will pick a dataset and answer 3 questions using the data.
 | 1_q2.ipynb   |This notebook uses listings_clean.csv as an input and outputs a graph to answer q2. Run 0_listing_data_prep.ipynb first.| 
 | 1_q3.ipynb    |This notebook uses listings_clean.csv as an input and outputs a valur to answer q3. Run 0_listing_data_prep.ipynb first.| 
 
-# Blog post
+### Blog post
 
 The answers to the questions are presented to a non-technical audience on a blog post, here:
 
 https://medium.com/@emma.mckinley/airbnb-seattle-advanced-analytics-72804206934f
 
 
-## Project 2: 
+# Project 2: 
 
 For this project, 
 
-# Data 
+### Data 
 
 | Data        | Description           | 
 | ------------- |-------------|
@@ -44,7 +44,7 @@ For this project,
 | calendar.csv     |Listing id and the price and availability for that day| 
 
 
-# Files
+### Files
 
 
 | Notebook        | Description           |
