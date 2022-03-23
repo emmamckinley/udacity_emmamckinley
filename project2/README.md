@@ -1,10 +1,10 @@
 # Disaster Response Pipeline Project
 
-This file contains instructions to build the web app. 
+
 
 ```diff
++ This file contains instructions to build the web app. 
 - For full details on the project and file descriptions see main README.md in the repository.
-
 ```
 
 ### Instructions:
