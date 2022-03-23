@@ -11,4 +11,17 @@
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
 
-3. Go to http://0.0.0.0:3001/
+3. Now, open another Terminal Window.
+
+    Run the following:
+    env|grep WORK
+
+    You'll see output that looks something like this:
+![webappaddress](https://user-images.githubusercontent.com/99752996/159735625-c2ff8aac-27d9-49a4-84a2-1c9dbc59d6d0.png)
+
+
+    In a new web browser window, type in the following:
+    https://SPACEID-3001.SPACEDOMAIN
+    In this example, that would be: "https://viewa7a4999b-3001.udacity-student-workspaces.com/" (Don't follow this link now, this is just an example.)
+
+    You should be able to see the web app. The number 3001 represents the port where your web app will show up. Make sure that the 3001 is part of the web      address you type in.
