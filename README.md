@@ -73,7 +73,6 @@ The following models were considered:
 * Random Forest classifier using 2 transformers with gridsearch
 * Random Forest classifier using 3 transformers
 * kn neighbours with 3 transformers
-* 
-These are the f1-scores:
+* kn neighbours with 3 transformers with gridsearch
 
-While the kn model was an improvement in terms of f1-score the requirement for this model is a gridsearch and therefore model 5 was selected.
+The kn neighbours with 3 transformers with gridsearch was chosen as this was the best average f1-score across all 36 targets vars.
