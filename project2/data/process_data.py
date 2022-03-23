@@ -22,7 +22,9 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-
+    """
+    Clean the data by creating target columns.
+    """
     ## Split 'categories' into separate category columns.
 
     # create a dataframe of the 36 individual category columns
@@ -60,12 +62,18 @@ def clean_data(df):
     return df
 
 def save_data(df, database_filepath):
+    """
+    Save the data into an sqlite db
+    """
     # Save the clean dataset into an sqlite database
     engine = create_engine('sqlite:///'+database_filepath)
     df.to_sql('msg_cat_clean', engine, index=False)  
 
 
 def main():
+    """
+    ETL function. Runs the Extract, Transform and Load steps.
+    """
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]

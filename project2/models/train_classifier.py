@@ -21,7 +21,9 @@ from sklearn.metrics import classification_report
 
 
 def load_data(database_filepath):
-            
+   """
+   A function to load in the data created in the ETL stage
+   """
     engine = create_engine('sqlite:///' + database_filepath)
     df = pd.read_sql_table('msg_cat_clean', engine)
     X = df['message']
@@ -29,7 +31,9 @@ def load_data(database_filepath):
     return X, y
 
 class StartingVerbExtractor(BaseEstimator, TransformerMixin):
-
+   """
+   A class to create extra NLP features.
+   """
     def starting_verb(self, text):
         sentence_list = nltk.sent_tokenize(text)
         for sentence in sentence_list:
@@ -47,6 +51,9 @@ class StartingVerbExtractor(BaseEstimator, TransformerMixin):
         return pd.DataFrame(X_tagged)
 
 def tokenize(text):
+   """
+   A function to create extra NLP features.
+   """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
@@ -59,6 +66,9 @@ def tokenize(text):
 
 
 def build_model():
+   """
+   A function which builds the model.
+   """
     pipeline = Pipeline([
         ('features', FeatureUnion([
 
@@ -77,7 +87,9 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test):
-
+   """
+   A function which evaluates the model giving a classification report for all the target fields.
+   """
     y_pred = model.predict(X_test)
     for target in range(0,36):
         y_test_temp  = Y_test.iloc[:, target]
@@ -88,11 +100,17 @@ def evaluate_model(model, X_test, Y_test):
 
 
 def save_model(model, model_filepath):
+   """
+   A function which saves the model to a pickle file.
+   """
     with open(model_filepath, "wb") as f:
         pickle.dump(model, f)
 
 
 def main():
+   """
+   A function which runs all the steps to load data, split into train and test, build model, print evaluation        results and save the final model to a pickle file.
+   """
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))

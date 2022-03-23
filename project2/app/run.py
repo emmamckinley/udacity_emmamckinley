@@ -40,6 +40,9 @@ app = Flask(__name__)
 
 # A class required within model
 class StartingVerbExtractor(BaseEstimator, TransformerMixin):
+    """
+    A NLP function which creates new features.
+    """
 
     def starting_verb(self, text):
         sentence_list = nltk.sent_tokenize(text)
@@ -59,6 +62,9 @@ class StartingVerbExtractor(BaseEstimator, TransformerMixin):
 
 # A function required in model
 def tokenize(text):
+    """
+    A NLP function which creates new features.
+    """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
@@ -72,6 +78,9 @@ def tokenize(text):
 # set-up word cloud that works in Plotly
 # Reference: https://github.com/PrashantSaikia/Wordcloud-in-Plotly/blob/master/plotly_wordcloud.py
 def plotly_wordcloud(text):
+    """
+    A function to plot a wordcloud with plotly.
+    """
     wc = WordCloud(stopwords = set(STOPWORDS),
                    max_words = 200,
                    max_font_size = 100)
@@ -119,6 +128,9 @@ def plotly_wordcloud(text):
 
 # Set-up data for graph 3
 def create_bars(cat_list, counts_list, name): 
+    """
+    A function which creates bars on a graph
+    """
     trace = Bar(
     x=cat_list,
     y=counts_list,
@@ -255,6 +267,9 @@ def index():
 # web page that handles user query and displays model results
 @app.route('/go')
 def go():
+    """
+    renders html
+    """
     # save user input in query
     query = request.args.get('query', '') 
 
@@ -271,6 +286,9 @@ def go():
 
 
 def main():
+    """
+    pushs web app live
+    """
     app.run(host='0.0.0.0', port=3001, debug=True)
 
 
