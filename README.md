@@ -58,9 +58,22 @@ See README.md in project2 folder.
 | Notebook        | Folder           |Description           |
 | ------------- |-------------| -------------|
 | process_data.py  | data | ETL code| 
-| train_classifier.py  | models|Build model code| 
+| train_classifier.py  | models|Build model code. See final model| 
 | run.py |app | Backend code. Runs plotly to build graphs.| 
 | go.html  |app/templates | Frontend html code. This has not been changed at the time of submitting the project.| 
 | master.html    |app/templates  | Frontend html code. This has not been changed at the time of submitting the project.| 
 
 
+### Model
+
+The model was chosen as this gave the highest f1-score. f1-score is a balance between recall/precision but would need more information to decide whether this is the best metric to us. The f1-score is a weighted average of the f1-scores for all response levels. 
+The following models were considered:
+
+* Random Forest classifier using 2 transformers
+* Random Forest classifier using 2 transformers with gridsearch
+* Random Forest classifier using 3 transformers
+* kn neighbours with 3 transformers
+* 
+These are the f1-scores:
+
+While the kn model was an improvement in terms of f1-score the requirement for this model is a gridsearch and therefore model 5 was selected.
