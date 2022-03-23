@@ -4,7 +4,7 @@
 
 ```diff
 + This file contains instructions to build the web app. 
-- For full details on the project and file descriptions see main README.md in the repository.
+- For full details on the project and file descriptions see README.md in the main repository directory.
 ```
 
 ### Instructions:
