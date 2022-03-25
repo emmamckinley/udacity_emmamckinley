@@ -66,13 +66,13 @@ See README.md in project2 folder.
 
 ### Model
 
-The model was chosen as this gave the highest f1-score. f1-score is a balance between recall/precision but would need more information to decide whether this is the best metric to us. The f1-score is a weighted average of the f1-scores for all response levels. 
+Different models were tested based on f1-score. f1-score is a balance between recall/precision but would need more information to decide whether this is the best metric to us. The f1-score looked at is a weighted average of the f1-scores for all response levels. 
 The following models were considered:
 
 * Random Forest classifier using 2 transformers
 * Random Forest classifier using 2 transformers with gridsearch
 * Random Forest classifier using 3 transformers
+* Random Forest classifier using 3 transformers with gridsearch
 * kn neighbours with 3 transformers
-* kn neighbours with 3 transformers with gridsearch
 
-The kn neighbours with 3 transformers with gridsearch was chosen as this was the best average f1-score across all 36 targets vars.
+The kn neighbours with 3 transformers had the best average f1-score across all 36 targets vars however, the Random Forest model with gridsearch was submitted as a Gridsearch was required. 
