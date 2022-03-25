@@ -12,7 +12,8 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
 
 from sklearn.multioutput import MultiOutputClassifier
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
 
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline, FeatureUnion
@@ -21,9 +22,7 @@ from sklearn.metrics import classification_report
 
 
 def load_data(database_filepath):
-   """
-   A function to load in the data created in the ETL stage
-   """
+    """ A function to load in the data created in the ETL stage """
     engine = create_engine('sqlite:///' + database_filepath)
     df = pd.read_sql_table('msg_cat_clean', engine)
     X = df['message']
@@ -31,9 +30,7 @@ def load_data(database_filepath):
     return X, y
 
 class StartingVerbExtractor(BaseEstimator, TransformerMixin):
-   """
-   A class to create extra NLP features.
-   """
+    """ A class to create extra NLP features. """
     def starting_verb(self, text):
         sentence_list = nltk.sent_tokenize(text)
         for sentence in sentence_list:
@@ -51,9 +48,7 @@ class StartingVerbExtractor(BaseEstimator, TransformerMixin):
         return pd.DataFrame(X_tagged)
 
 def tokenize(text):
-   """
-   A function to create extra NLP features.
-   """
+    """ A function to create extra NLP features. """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
@@ -66,9 +61,7 @@ def tokenize(text):
 
 
 def build_model():
-   """
-   A function which builds the model.
-   """
+    """ A function which builds the model. It is a model with 3 transformers, Random forest, with Gridsearch. """
     pipeline = Pipeline([
         ('features', FeatureUnion([
 
@@ -80,16 +73,22 @@ def build_model():
             ('starting_verb', StartingVerbExtractor())
         ])),
 
-        ('clf', KNeighborsClassifier())
+        ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
     
-    return pipeline
+    # print( pipeline.get_params().keys() )
+    
+    parameters = {
+        'clf__estimator__min_samples_split': [2, 3, 4]
+    }
+
+    cv = GridSearchCV(pipeline, param_grid=parameters)
+    
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test):
-   """
-   A function which evaluates the model giving a classification report for all the target fields.
-   """
+    """ A function which evaluates the model giving a classification report for all the target fields. """
     y_pred = model.predict(X_test)
     for target in range(0,36):
         y_test_temp  = Y_test.iloc[:, target]
@@ -100,17 +99,13 @@ def evaluate_model(model, X_test, Y_test):
 
 
 def save_model(model, model_filepath):
-   """
-   A function which saves the model to a pickle file.
-   """
+    """ A function which saves the model to a pickle file. """
     with open(model_filepath, "wb") as f:
         pickle.dump(model, f)
 
 
 def main():
-   """
-   A function which runs all the steps to load data, split into train and test, build model, print evaluation        results and save the final model to a pickle file.
-   """
+    """ A function which runs all the steps to load data, split into train and test, build model, print evaluation        results and save the final model to a pickle file."""
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
