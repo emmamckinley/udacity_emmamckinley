@@ -75,14 +75,18 @@ The model has been tested on Python version 3.6 and requires the following packa
 
 ### Classifications
 The web app inlcudes the functionality to enter a disaster message and it will predict the categories using the model. Here is a screenshot of this functionality:
+![Screenshot 2022-03-30 at 20 34 21](https://user-images.githubusercontent.com/99752996/160929442-536b7538-5664-4bbc-9149-390f560af689.png)
 
 ### Visualisations
 
-1. The project came with the first chart, a graph of
+1. The project came with the first chart:
+![Screenshot 2022-03-30 at 20 34 57](https://user-images.githubusercontent.com/99752996/160929465-3fa94d7d-761d-4dc3-abc6-08e528f7db8e.png)
 
 2. I created a wordcloud to visualise some of the key words appearing across all the messages. This might even help the user word some of their messages in a way similar to others which may lead to the model making better predictions.
+![Screenshot 2022-03-30 at 20 35 17](https://user-images.githubusercontent.com/99752996/160929476-ed19f235-167a-44c0-b5d5-2bab4e739300.png)
 
-4. It's also useful to understand the distributions of categories in the data. Particularly if any have low volumes of 1,2 because the model may not accurately predict for these categories.
+3. It's also useful to understand the distributions of categories in the data. Particularly if any have low volumes of 1,2 because the model may not accurately predict for these categories.
+![Screenshot 2022-03-30 at 20 36 01](https://user-images.githubusercontent.com/99752996/160929482-36c304cb-ff02-4db0-93c6-1ac7204867de.png)
 
 ### Instructions
 Run the following commands in the project's root directory to set up your database and model.
