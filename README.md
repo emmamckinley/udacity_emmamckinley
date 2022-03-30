@@ -76,3 +76,21 @@ The following models were considered:
 * kn neighbours with 3 transformers
 
 The kn neighbours with 3 transformers had the best average f1-score across all 36 targets vars however, the Random Forest model with gridsearch was submitted as a Gridsearch was required. 
+
+
+Instructions:
+Run the following commands in the project's root directory to set up your database and model.
+
+To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+Run the following command in the app's directory to run your web app. python run.py
+
+Now, open another Terminal Window.
+
+Run the following: env|grep WORK
+
+You'll see output that looks something like this: webappaddress
+
+In a new web browser window, type in the following: https://SPACEID-3001.SPACEDOMAIN In this example, that would be: "https://viewa7a4999b-3001.udacity-student-workspaces.com/" (Don't follow this link now, this is just an example.)
+
+You should be able to see the web app. The number 3001 represents the port where your web app will show up. Make sure that the 3001 is part of the web address you type in.
