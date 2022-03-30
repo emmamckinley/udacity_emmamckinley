@@ -89,7 +89,8 @@ Now, open another Terminal Window.
 
 Run the following: env|grep WORK
 
-You'll see output that looks something like this: webappaddress
+You'll see output that looks something like this:
+<img src="https://user-images.githubusercontent.com/99752996/159735625-c2ff8aac-27d9-49a4-84a2-1c9dbc59d6d0.png" alt="webappaddress"/>
 
 In a new web browser window, type in the following: https://SPACEID-3001.SPACEDOMAIN In this example, that would be: "https://viewa7a4999b-3001.udacity-student-workspaces.com/" (Don't follow this link now, this is just an example.)
 
