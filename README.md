@@ -70,87 +70,18 @@ This project will utilise my software skills, including my ability to create bas
 
 ### Installations
 
-The model runs on Python version blah and requires the following packages:
-
-import pandas as pd
-from sqlalchemy import create_engine
-import sys
-
-import sys
-import pandas as pd
-import pickle
-from sqlalchemy import create_engine
-from sqlalchemy import inspect
-    
-import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.base import BaseEstimator, TransformerMixin
-
-from sklearn.multioutput import MultiOutputClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV
-
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline, FeatureUnion
-
-from sklearn.metrics import classification_report
-
-
-
-# Imports:
-import json
-import plotly
-import sys
-import pickle
-
-# Required for data
-import pandas as pd
-from sqlalchemy import create_engine
-
-# Required for model
-import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.multioutput import MultiOutputClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline, FeatureUnion
-from sklearn.metrics import classification_report
-from sklearn.externals import joblib
-
-# Required for graphs
-from plotly.graph_objs import Bar
-from plotly.graph_objs import Scatter
-from plotly.graph_objs import Layout
-from wordcloud import WordCloud, STOPWORDS
-import matplotlib.pyplot as plt
-
-# For web app
-from flask import Flask
-from flask import render_template, request, jsonify
-
-
-
+The model has been tested on Python version 3.6 and requires the following packages:
+*pandas, sqlalchemy, sys, pickle, nltk, sklearn, json, plotly, wordcloud, matplotlib, flask.*
 
 ### Model
 
 Different models were tested based on f1-score. f1-score is a balance between recall/precision but would need more information to decide whether this is the best metric to us. The f1-score looked at is a weighted average of the f1-scores for all response levels. 
 The following models were considered:
 
-* Random Forest classifier using 2 transformers
-* Random Forest classifier using 2 transformers with gridsearch
-* Random Forest classifier using 3 transformers
-* Random Forest classifier using 3 transformers with gridsearch
+* Random Forest classifier using 2/3 transformer with gridsearch
 * kn neighbours with 3 transformers
 
 The kn neighbours with 3 transformers had the best average f1-score across all 36 targets vars however, the Random Forest model with gridsearch was submitted as a Gridsearch was required. 
-
 
 ### Classifications
 The web app inlcudes the functionality to enter a disaster message and it will predict the categories using the model. Here is a screenshot of this functionality:
@@ -159,11 +90,9 @@ The web app inlcudes the functionality to enter a disaster message and it will p
 
 1. The project came with the first chart, a graph of
 
-2. I created a wordcloud to visualise some of the key words appearing across all the messages:
+2. I created a wordcloud to visualise some of the key words appearing across all the messages. This might even help the user word some of their messages in a way similar to others which may lead to the model making better predictions.
 
-This might even help the user word some of their messages in a way similar to others which may lead to the model making better predictions.
-
-4. It's also useful to understand the distributions of categories. Particularly if any have low volumes of 1,2 levels because the model may not accurate predict for these categories.
+4. It's also useful to understand the distributions of categories in the data. Particularly if any have low volumes of 1,2 because the model may not accurately predict for these categories.
 
 ### Instructions
 Run the following commands in the project's root directory to set up your database and model.
