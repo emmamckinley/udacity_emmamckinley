@@ -115,7 +115,7 @@ To open the web app.
 
 ### Acknowledgements
 
-I found a function online which plotted a word cloud using plotly, see here:
+I found a function online which plotted a word cloud using plotly, see here: <br>
 https://github.com/PrashantSaikia/Wordcloud-in-Plotly/blob/master/plotly_wordcloud.py
 
 I used a feature generator provided in this course called starting_verb. Thank-you to whoever created this.
