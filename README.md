@@ -73,16 +73,6 @@ This project will utilise my software skills, including my ability to create bas
 The model has been tested on Python version 3.6 and requires the following packages:
 *pandas, sqlalchemy, sys, pickle, nltk, sklearn, json, plotly, wordcloud, matplotlib, flask.*
 
-### Model
-
-Different models were tested based on f1-score. f1-score is a balance between recall/precision but would need more information to decide whether this is the best metric to us. The f1-score looked at is a weighted average of the f1-scores for all response levels. 
-The following models were considered:
-
-* Random Forest classifier using 2/3 transformer with gridsearch
-* kn neighbours with 3 transformers
-
-The kn neighbours with 3 transformers had the best average f1-score across all 36 targets vars however, the Random Forest model with gridsearch was submitted as a Gridsearch was required. 
-
 ### Classifications
 The web app inlcudes the functionality to enter a disaster message and it will predict the categories using the model. Here is a screenshot of this functionality:
 
