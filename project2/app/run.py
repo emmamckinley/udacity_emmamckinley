@@ -11,9 +11,10 @@ from sqlalchemy import create_engine
 
 # Required for model
 import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
+nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger', 'stopwords'])
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.multioutput import MultiOutputClassifier
@@ -70,6 +71,22 @@ def tokenize(text):
 
     clean_tokens = []
     for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+
+    return clean_tokens
+
+def tokenize_stop(text):
+    """ A function to create extra NLP features. Tokenize and remove stop words """
+    #tokenize
+    tokens = word_tokenize(text)
+    # Remove stop words
+    words = [w for w in tokens if w not in stopwords.words("english")]
+    
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in words:
         clean_tok = lemmatizer.lemmatize(tok).lower().strip()
         clean_tokens.append(clean_tok)
 

@@ -5,9 +5,11 @@ from sqlalchemy import create_engine
 from sqlalchemy import inspect
     
 import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
+nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger', 'stopwords'])
+
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -28,6 +30,36 @@ def load_data(database_filepath):
     X = df['message']
     y = df.iloc[:,4:]
     return X, y
+def tokenize(text):
+    """ A function to create extra NLP features. Tokenize. """    
+    #tokenize
+    tokens = word_tokenize(text)
+    
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+        
+    return clean_tokens
+
+def tokenize_stop(text):
+    """ A function to create extra NLP features. Tokenize and remove stop words """
+    #tokenize
+    tokens = word_tokenize(text)
+    # Remove stop words
+    words = [w for w in tokens if w not in stopwords.words("english")]
+    
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in words:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+
+    return clean_tokens
+
 
 class StartingVerbExtractor(BaseEstimator, TransformerMixin):
     """ A class to create extra NLP features. """
@@ -47,26 +79,13 @@ class StartingVerbExtractor(BaseEstimator, TransformerMixin):
         X_tagged = pd.Series(X).apply(self.starting_verb)
         return pd.DataFrame(X_tagged)
 
-def tokenize(text):
-    """ A function to create extra NLP features. """
-    tokens = word_tokenize(text)
-    lemmatizer = WordNetLemmatizer()
-
-    clean_tokens = []
-    for tok in tokens:
-        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-        clean_tokens.append(clean_tok)
-
-    return clean_tokens
-
-
 def build_model():
     """ A function which builds the model. It is a model with 3 transformers, Random forest, with Gridsearch. """
     pipeline = Pipeline([
         ('features', FeatureUnion([
 
             ('text_pipeline', Pipeline([
-                ('vect', CountVectorizer(tokenizer=tokenize)),
+                ('vect', CountVectorizer(tokenizer=tokenize_stop)),
                 ('tfidf', TfidfTransformer())
             ])),
 
