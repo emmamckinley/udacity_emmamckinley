@@ -7,9 +7,11 @@ Contents:
 1. [ Data ](#p1)
 2. [ Notebooks ](#p2)
 3. [ Notebooks ](#p3)
-4. [ Installations ](#p4)
+4. [ Classifications ](#p4)
 5. [ Visualisations ](#p5)
-6. [ Acknowledgements ](#p6)
+6. [ Instructions ](#p6)
+7. [ Acknowledgements ](#p7)
+8. [ Extra tips ](#p8)
 
 <a name="p1"></a>
 ### Data 
@@ -81,3 +83,17 @@ I found a function online which plotted a word cloud using plotly, see here: <br
 https://github.com/PrashantSaikia/Wordcloud-in-Plotly/blob/master/plotly_wordcloud.py
 
 I used a feature generator provided in this course called starting_verb. Thank-you to whoever created this.
+
+
+<a name="p8"></a>
+### Extra tips
+
+* You can further look into deploying application on Heroku.
+
+* You can also use following message format for providing more structured message.
+ Bugfix: bugfix message
+ Update: update message
+ Correction: correction message
+ Added: files added or whatever
+ 
+ * Initialize verbose=3 in GridSearchCV() class to get extra messages
