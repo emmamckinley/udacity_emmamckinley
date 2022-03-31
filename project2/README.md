@@ -42,19 +42,19 @@ The model has been tested on Python version 3.6 and requires the following packa
 <a name="p4"></a>
 ### Classifications
 The web app inlcudes the functionality to enter a disaster message and it will predict the categories using the model. This uses a Random Forest classifier optimised using GridSearchCV(). Here is a screenshot of this functionality:
-![Screenshot 2022-03-30 at 20 34 21](https://user-images.githubusercontent.com/99752996/160929442-536b7538-5664-4bbc-9149-390f560af689.png)
+![image](https://user-images.githubusercontent.com/99752996/161022077-9bfd0909-3834-43e0-879e-dbd8de3ba3b7.png)
 
 <a name="p5"></a>
 ### Visualisations
 
 1. The project came with the first chart:
-![Screenshot 2022-03-30 at 20 34 57](https://user-images.githubusercontent.com/99752996/160929465-3fa94d7d-761d-4dc3-abc6-08e528f7db8e.png)
+![image](https://user-images.githubusercontent.com/99752996/161022197-fd0488dd-9928-491d-ae7a-e5d7c902cac8.png)
 
 2. I created a wordcloud to visualise some of the key words appearing across all the messages. This might even help the user word some of their messages in a way similar to others which may lead to the model making better predictions. <br>
-![Screenshot 2022-03-30 at 20 35 17](https://user-images.githubusercontent.com/99752996/160929476-ed19f235-167a-44c0-b5d5-2bab4e739300.png)
+![image](https://user-images.githubusercontent.com/99752996/161022286-a84558a0-1b82-481e-9bc5-b92827f9c8ca.png)
 
 3. It's also useful to understand the distributions of categories in the data. Particularly if any have low volumes of 1,2 because the model may not accurately predict for these categories.
-![Screenshot 2022-03-30 at 20 36 01](https://user-images.githubusercontent.com/99752996/160929482-36c304cb-ff02-4db0-93c6-1ac7204867de.png)
+![image](https://user-images.githubusercontent.com/99752996/161022377-282f82b9-d9d0-4f22-b72b-a898be3780d7.png)
 
 <a name="p6"></a>
 ### Instructions
