@@ -1,7 +1,4 @@
 
-1. [ Data ](#p1)
-2. [ Notebooks ](#p2)
-3. [ Blog ](#p3)
 
 
 
@@ -12,6 +9,13 @@ For this project, you will pick a dataset and answer 3 questions using the data.
 1. Is there seasonality in price?
 2. Does price vary by neighbourhood?
 3. What price should I set my property at in order to be similar to the others?
+
+Contents:
+
+1. [ Data ](#p1)
+2. [ Notebooks ](#p2)
+3. [ Blog ](#p3)
+
 
 <a name="p1"></a>
 ### Data 
