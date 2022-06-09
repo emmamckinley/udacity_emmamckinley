@@ -39,7 +39,7 @@ Using the data dictionaries I also created the following files:
 
 | Notebook        | Description           | Inputs           | Outputs           |
 | ------------- |-------------|-------------|-------------|
-| 1_data_prep.ipynb  | Data prep | fieldnames.csv, valuenames.csv, unknown_values.csv, Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
+| 1_data_prep.ipynb  | Data prep * exact results can not be replicated but since running I added a sort_values so the same results should be produced each time going forward.| fieldnames.csv, valuenames.csv, unknown_values.csv, Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
 | 2_unsupervised_learning.ipynb   |Unsupervised analysis for Customer Segmentation |customers_FR.csv, Germany_samp.csv, germany_FR.csv | none | 
 | 3_supervised_learning.ipynb  | Builds a supervised model for target marketing |Udacity_MAILOUT_052018_TRAIN.csv, Udacity_MAILOUT_052018_TEST.csv | kaggle.csv | 
 
