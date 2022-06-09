@@ -6,8 +6,9 @@ Contents:
 
 1. [ Data ](#p1)
 2. [ Notebooks ](#p2)
-3. [ Requirements ](#p4)
-4. [ Blog ](#p3)
+3. [ How to run ](#p5)
+4. [ Requirements ](#p4)
+5. [ Blog ](#p3)
 
 <a name="p1"></a>
 ### Data 
@@ -39,35 +40,54 @@ Using the data dictionaries I also created the following files:
 
 | Notebook        | Description           | Inputs           | Outputs           |
 | ------------- |-------------|-------------|-------------|
-| 1_data_prep.ipynb * | Data prep | fieldnames.csv, valuenames.csv, unknown_values.csv, Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
-| 2_unsupervised_learning.ipynb   |Unsupervised analysis for Customer Segmentation |customers_FR.csv, Germany_samp.csv, germany_FR.csv | none | 
-| 3_supervised_learning.ipynb  | Builds a supervised model for target marketing |Udacity_MAILOUT_052018_TRAIN.csv, Udacity_MAILOUT_052018_TEST.csv | kaggle.csv | 
+| 1_data_prep.ipynb * | Data prep | fieldnames.csv, valuenames.csv, unknown_values.csv, Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv (x2), train.csv (x2), test.csv (x2)| 
+| 2_unsupervised.ipynb   |Unsupervised analysis for Customer Segmentation |customers_FR.csv, Germany_samp.csv, germany_FR.csv | none | 
+| 3_supervised.ipynb  | Builds a supervised model for target marketing |Udacity_MAILOUT_052018_TRAIN.csv, Udacity_MAILOUT_052018_TEST.csv | kaggle.csv | 
 
-* exact results can not be replicated but since running I added a sort_values so the same results should be produced each time going forward.
+'* exact results can not be replicated but since running I added a sort_values so the same results should be produced each time going forward.
+
+<a name="p5"></a>
+### How to run
+* Open 1_data_prep and change the location of the input files: ../../../../data/Term2/capstone/arvato_data/
+* Click run 
+* I split germany, train and test into 2 parts so that I could upload it to the server at work as this could do the unsupervised and supervised quicker.
+* 2_unsupervised and 3_supervised must be run after 1_data_prep and don't have any dependencies on each other.
 
 <a name="p4"></a>
 ### Requirements 
 The notebooks have been run in 2 separate environments.
 
-1. 1_data_prep.ipynb.
-Python version
-3.6.3 | packaged by conda-forge | (default, Dec  9 2017, 04:28:46) 
-[GCC 4.8.2 20140120 (Red Hat 4.8.2-15)]
-Version info.
-sys.version_info(major=3, minor=6, micro=3, releaselevel='final', serial=0)
-numpy
+_1_data_prep.ipynb_
+**Python version**
+3.6.3 
+**numpy**
 1.12.1
-pandas
+**pandas**
 0.23.3
-matplotlib
+**matplotlib**
 2.1.0
-scipy
+**scipy**
 1.2.1
-itertools
-- same as Python version
+**itertools** - same as Python version
 
-2. 2_unsupervised_learning.ipynb and 3_supervised_learning.ipynb.
-I copied over the data to my work server as it is faster (Made a note to remove it after 2 weeks as per T&C)
+_2_unsupervised_learning.ipynb and 3_supervised_learning.ipynb_
+**Python version**
+3.8.12 
+**pandas**
+1.4.2
+**sklearn**
+1.0.1
+**matplotlib**
+3.5.0
+**seaborn**
+0.11.2
+**plotnine**
+0.8.0
+**kmodes**
+0.12.1
+**scipy**
+1.5.3
+**itertools** and **datetime** also imported. Same as Python version
 
 <a name="p3"></a>
 ### Blog post
