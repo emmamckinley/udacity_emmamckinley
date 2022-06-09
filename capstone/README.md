@@ -93,6 +93,5 @@ _2_unsupervised_learning.ipynb and 3_supervised_learning.ipynb_
 ### Blog post
 
 The project overview, results and acknowledgements are presented to a technical audience on a blog post, here:
-https://medium.com/@emma.mckinley/airbnb-seattle-advanced-analytics-72804206934f
-
+https://medium.com/@emma.mckinley/mail-order-customer-data-183990781f92
 
