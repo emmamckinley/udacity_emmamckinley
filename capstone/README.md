@@ -1,6 +1,6 @@
 # Captone: Mail-order Customer data
 
-This blog was created as part of my Data Science nanodegree from Udacity where I have chosen to analyse data provided Arvato Financial Services. The data contains attributes of customers from a mail-order service in Germany and attributes of the general population of Germany.
+This project was completed as part of my Data Science nanodegree from Udacity where I have chosen to analyse data provided Arvato Financial Services. The data contains attributes of customers from a mail-order service in Germany and attributes of the general population of Germany.
 
 Contents:
 
@@ -14,10 +14,13 @@ Contents:
 <a name="p1"></a>
 ### Data 
 
-| Data        | Description           | Source           | 
-| ------------- |-------------|-------------| 
-| listings.csv     |Full descriptions and average review score| https://www.kaggle.com/airbnb/seattle | 
-| calendar.csv     |Listing id and the price and availability for that day| https://www.kaggle.com/airbnb/seattle |  
+| Data        | Description           | 
+| ------------- |-------------|
+| Udacity_AZDIAS_052018.csv     |Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).| 
+| Udacity_CUSTOMERS_052018.csv     | Demographics data for customers of a mail-order company; 191 652 persons (rows) x 369 features (columns).|  
+| Udacity_MAILOUT_052018_TRAIN.csv     |Demographics data for individuals who were targets of a marketing campaign; 42 982 persons (rows) x 367 (columns).|  
+| Udacity_MAILOUT_052018_TEST.csv     |Demographics data for individuals who were targets of a marketing campaign; 42 833 persons (rows) x 366 (columns).|  
+
 
 <a name="p2"></a>
 ### Notebooks
