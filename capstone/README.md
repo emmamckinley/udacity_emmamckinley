@@ -39,7 +39,7 @@ Using the data dictionaries I also created the following files:
 
 | Notebook        | Description           | Inputs           | Outputs           |
 | ------------- |-------------|-------------|-------------|
-| 1_data_prep.ipynb  | Data prep | Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
+| 1_data_prep.ipynb  | Data prep | fieldnames.csv, valuenames.csv, unknown_values.csv, Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
 | 2_unsupervised_learning.ipynb   |Unsupervised analysis for Customer Segmentation |customers_FR.csv, Germany_samp.csv, germany_FR.csv | none | 
 | 3_supervised_learning.ipynb  | Builds a supervised model for target marketing |Udacity_MAILOUT_052018_TRAIN.csv, Udacity_MAILOUT_052018_TEST.csv | kaggle.csv | 
 
@@ -48,9 +48,24 @@ Using the data dictionaries I also created the following files:
 The notebooks have been run in 2 separate environments.
 
 1. 1_data_prep.ipynb.
+Python version
+3.6.3 | packaged by conda-forge | (default, Dec  9 2017, 04:28:46) 
+[GCC 4.8.2 20140120 (Red Hat 4.8.2-15)]
+Version info.
+sys.version_info(major=3, minor=6, micro=3, releaselevel='final', serial=0)
+numpy
+1.12.1
+pandas
+0.23.3
+matplotlib
+2.1.0
+scipy
+1.2.1
+itertools
+- same as Python version
 
 2. 2_unsupervised_learning.ipynb and 3_supervised_learning.ipynb.
-
+I copied over the data to my work server as it is faster (Made a note to remove it after 2 weeks as per T&C)
 
 <a name="p3"></a>
 ### Blog post
