@@ -1,0 +1,142 @@
+﻿field,desc,level,leveldesc
+D19_KONSUMTYP,Consumption type (Household),1,Universal
+D19_KONSUMTYP,Consumption type (Household),2,Versatile
+D19_KONSUMTYP,Consumption type (Household),3,Gourmet
+D19_KONSUMTYP,Consumption type (Household),4,Family
+D19_KONSUMTYP,Consumption type (Household),5,Informed 
+D19_KONSUMTYP,Consumption type (Household),6,Modern
+D19_KONSUMTYP,Consumption type (Household),9,Inactive
+FINANZ_SPARER,Money saver (Person),1,very high
+FINANZ_SPARER,Money saver (Person),2,high
+FINANZ_SPARER,Money saver (Person),3,average
+FINANZ_SPARER,Money saver (Person),4,low
+FINANZ_SPARER,Money saver (Person),5,very low
+FINANZ_ANLEGER,Investor (Person),1,very high
+FINANZ_ANLEGER,Investor (Person),2,high
+FINANZ_ANLEGER,Investor (Person),3,average
+FINANZ_ANLEGER,Investor (Person),4,low
+FINANZ_ANLEGER,Investor (Person),5,very low
+FINANZTYP,Financial Type (Person),1,low finacial interest
+FINANZTYP,Financial Type (Person),2,money saver
+FINANZTYP,Financial Type (Person),3,main focus is the own house
+FINANZTYP,Financial Type (Person),4,be prepared
+FINANZTYP,Financial Type (Person),5,Investor
+FINANZTYP,Financial Type (Person),6,unremarkable
+LP_STATUS_FEIN,Social Status (Person),1,typical low-income earners
+LP_STATUS_FEIN,Social Status (Person),2,orientationseeking low-income earners
+LP_STATUS_FEIN,Social Status (Person),3,aspiring low-income earners 
+LP_STATUS_FEIN,Social Status (Person),4,villagers
+LP_STATUS_FEIN,Social Status (Person),5,minimalistic high-income earners
+LP_STATUS_FEIN,Social Status (Person),6,independant workers
+LP_STATUS_FEIN,Social Status (Person),7,title holder-households
+LP_STATUS_FEIN,Social Status (Person),8,new houseowners
+LP_STATUS_FEIN,Social Status (Person),9,houseowners
+LP_STATUS_FEIN,Social Status (Person),10,top earners 
+SEMIO_LUST,Person is sensual minded,1,highest affinity
+SEMIO_LUST,Person is sensual minded,2,very high affinity
+SEMIO_LUST,Person is sensual minded,3,high affinity
+SEMIO_LUST,Person is sensual minded,4,average affinity
+SEMIO_LUST,Person is sensual minded,5,low affinity
+SEMIO_LUST,Person is sensual minded,6,very low affinity
+SEMIO_LUST,Person is sensual minded,7,lowest affinity
+HH_EINKOMMEN_SCORE,Household net income ,1,highest income
+HH_EINKOMMEN_SCORE,Household net income ,2,very high income
+HH_EINKOMMEN_SCORE,Household net income ,3,high income
+HH_EINKOMMEN_SCORE,Household net income ,4,average income
+HH_EINKOMMEN_SCORE,Household net income ,5,lower income
+HH_EINKOMMEN_SCORE,Household net income ,6,very low income
+FINANZ_UNAUFFAELLIGER,Person financial typology: unremarkable,1,very high
+FINANZ_UNAUFFAELLIGER,Person financial typology: unremarkable,2,high
+FINANZ_UNAUFFAELLIGER,Person financial typology: unremarkable,3,average
+FINANZ_UNAUFFAELLIGER,Person financial typology: unremarkable,4,low
+FINANZ_UNAUFFAELLIGER,Person financial typology: unremarkable,5,very low
+WOHNDAUER_2008,Length of residence,1,Below 1 year
+WOHNDAUER_2008,Length of residence,2,1-2 years
+WOHNDAUER_2008,Length of residence,3,2-3 years
+WOHNDAUER_2008,Length of residence,4,3-4 years
+WOHNDAUER_2008,Length of residence,5,4-5 years
+WOHNDAUER_2008,Length of residence,6,5-6 years
+WOHNDAUER_2008,Length of residence,7,6-7 years
+WOHNDAUER_2008,Length of residence,8,7-10 years
+WOHNDAUER_2008,Length of residence,9,More than 10 years
+LP_FAMILIE_GROB,Family type,1,single 
+LP_FAMILIE_GROB,Family type,2,couple
+LP_FAMILIE_GROB,Family type,3,single parent
+LP_FAMILIE_GROB,Family type,4,single parent?
+LP_FAMILIE_GROB,Family type,5,single parent?
+LP_FAMILIE_GROB,Family type,6,family
+LP_FAMILIE_GROB,Family type,7,family?
+LP_FAMILIE_GROB,Family type,8,family?
+LP_FAMILIE_GROB,Family type,9,multiperson household
+LP_FAMILIE_GROB,Family type,10,multiperson household?
+ANREDE_KZ,gender,1,male
+ANREDE_KZ,gender,2,female
+FINANZ_VORSORGER,financial typology: be prepared,1,very high
+FINANZ_VORSORGER,financial typology: be prepared,2,high
+FINANZ_VORSORGER,financial typology: be prepared,3,average
+FINANZ_VORSORGER,financial typology: be prepared,4,low
+FINANZ_VORSORGER,financial typology: be prepared,5,very low
+RETOURTYP_BK_S,return type,1,influenceable Crazy-Shopper
+RETOURTYP_BK_S,return type,2,demanding Heavy-Returner
+RETOURTYP_BK_S,return type,3,incentive-receptive Normal-Returner
+RETOURTYP_BK_S,return type,4,conservative Low-Returner
+RETOURTYP_BK_S,return type,5,determined Minimal-Returner
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,1,highest affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,2,very high affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,3,high affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,4,average affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,5,low affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,6,very low affinity
+SEMIO_VERT,Affinity indicating in what way the person is dreamily,7,lowest affinity
+CJT_GESAMTTYP,customer journey typology,1,Advertising- and Consumptionminimalist
+CJT_GESAMTTYP,customer journey typology,2,Advertising- and Consumptiontraditionalist
+CJT_GESAMTTYP,customer journey typology,3,advertisinginterested Store-shopper
+CJT_GESAMTTYP,customer journey typology,4,advertisinginterested Online-shopper
+CJT_GESAMTTYP,customer journey typology,5,Advertising- and Cross-Channel-Enthusiast
+CJT_GESAMTTYP,customer journey typology,6,Advertising-Enthusiast with restricted Cross-Channel-Behaviour 
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,0,none
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,1,very low
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,2,low
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,3,average
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,4,high
+KBA13_SITZE_5,number of cars with less than 5 seats in the PLZ8,5,very high
+ARBEIT,share of unemployed in relation to the county the community belongs to,1,very low
+ARBEIT,share of unemployed in relation to the county the community belongs to,2,low
+ARBEIT,share of unemployed in relation to the county the community belongs to,3,average
+ARBEIT,share of unemployed in relation to the county the community belongs to,4,high
+ARBEIT,share of unemployed in relation to the county the community belongs to,5,very high
+KBA13_BMW,share of BMW within the PLZ8,0,none
+KBA13_BMW,share of BMW within the PLZ8,1,very low
+KBA13_BMW,share of BMW within the PLZ8,2,low
+KBA13_BMW,share of BMW within the PLZ8,3,average
+KBA13_BMW,share of BMW within the PLZ8,4,high
+KBA13_BMW,share of BMW within the PLZ8,5,very high
+PLZ8_GBZ,number of buildings within the PLZ8,1,less than 60 buildings
+PLZ8_GBZ,number of buildings within the PLZ8,2,60-129 buildings
+PLZ8_GBZ,number of buildings within the PLZ8,3,130-299 buildings
+PLZ8_GBZ,number of buildings within the PLZ8,4,300-449 buildings
+PLZ8_GBZ,number of buildings within the PLZ8,5,more than 449 buildings
+PLZ8_ANTG2,number of 3-5 family houses in the PLZ8,0,none
+PLZ8_ANTG2,number of 3-5 family houses in the PLZ8,1,low share
+PLZ8_ANTG2,number of 3-5 family houses in the PLZ8,2,average share
+PLZ8_ANTG2,number of 3-5 family houses in the PLZ8,3,high share
+PLZ8_ANTG2,number of 3-5 family houses in the PLZ8,4,very high share
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),1,"building is located in a 125 x 125m-grid cell (RA1), which is a consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),2,"building is located in a 250 x 250m-grid cell, which includes at least one RA1-consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),3,"building is located in a 500 x 500m-grid cell, which includes at least one RA1-consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),4,"building is located in a 1 x 1km-grid cell, which includes at least one RA1-consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),5,"building is located in a 2 x 2km-grid cell, which includes at least one RA1-consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),6,"building is located in a 10 x 10km-grid cell, which includes at least one RA1-consumption cell"
+KONSUMNAEHE,distance from a building to PoS (Point of Sale),7,building is not located in a 10 x 10km-range to a a consumption cell
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,0,none
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,1,very low
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,2,low
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,3,average
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,4,high
+KBA13_KMH_140,share of cars with max speed between 110 km/h and 140km/h within the PLZ8,5,very high
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,0,none
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,1,very low
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,2,low
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,3,average
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,4,high
+KBA13_HALTER_55,share of car owners between 51 and 55 within the PLZ8,5,very high
