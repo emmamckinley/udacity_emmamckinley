@@ -8,43 +8,54 @@ Contents:
 2. [ Notebooks ](#p2)
 3. [ Requirements ](#p4)
 4. [ Blog ](#p3)
-5. [ Acknowledgements ](#p5)
-
 
 <a name="p1"></a>
 ### Data 
 
-| Data        | Description           | 
+The below data has been provided but not uploaded to github, as per the terms and conditions within the project. They can be found at the following location within the project workspace on udacity: ../../data/Term2/capstone/arvato_data/
+
+
+| Data        | Description     | 
 | ------------- |-------------|
 | Udacity_AZDIAS_052018.csv     |Demographics data for the general population of Germany; 891 211 persons (rows) x 366 features (columns).| 
 | Udacity_CUSTOMERS_052018.csv     | Demographics data for customers of a mail-order company; 191 652 persons (rows) x 369 features (columns).|  
 | Udacity_MAILOUT_052018_TRAIN.csv     |Demographics data for individuals who were targets of a marketing campaign; 42 982 persons (rows) x 367 (columns).|  
 | Udacity_MAILOUT_052018_TEST.csv     |Demographics data for individuals who were targets of a marketing campaign; 42 833 persons (rows) x 366 (columns).|  
+| DIAS Attributes - Values 2017.xlsx    |Data Dictionary containing the levels of the categorical columns|  
+| DIAS Information Levels - Attributes 2017.xlsx    |Data Dictionary containing the columns names and the level of information e.g. Person, Household, Neighbourhood|  
+
+Using the data dictionaries I also created the following files:
+
+| Data        | Description     | 
+| ------------- |-------------|
+| fieldnames.csv    |List of Columns in DIAS Information Levels - Attributes 2017.xlsx | 
+| valuenames.csv     |List of Columns in DIAS Attributes - Values 2017.xlsx |  
+| labels.csv  | A tidy version of DIAS Attributes - Values 2017.xlsx that can be used to label the graphs. Only includes columns needed for visuals. |  
+| unknown_values.csv    |One row per column in the data with an Unknown level coded as 0, 9 or -1. Will use this to set values to NULL.|  
 
 
 <a name="p2"></a>
 ### Notebooks
 
-
-| Notebook        | Description           |
-| ------------- |-------------|
-| 0_listing_data_prep.ipynb  |This notebook uses listings.csv as an input and outputs listings_clean.csv which is a clean version for modelling and used in Q2 and Q3.| 
-| 1_q1.ipynb    |This notebook uses calendar.csv as an input and outputs a graph to answer q1.| 
-| 1_q2.ipynb   |This notebook uses listings_clean.csv as an input and outputs a graph to answer q2. Run 0_listing_data_prep.ipynb first.| 
-| 1_q3.ipynb    |This notebook uses listings_clean.csv as an input and outputs a valur to answer q3. Run 0_listing_data_prep.ipynb first.| 
+| Notebook        | Description           | Inputs           | Outputs           |
+| ------------- |-------------|-------------|-------------|
+| 1_data_prep.ipynb  | Data prep | Udacity_AZDIAS_052018.csv, Udacity_CUSTOMERS_052018.csv. | customers_FR.csv, Germany_samp.csv, germany_FR.csv | 
+| 2_unsupervised_learning.ipynb   |Unsupervised analysis for Customer Segmentation |customers_FR.csv, Germany_samp.csv, germany_FR.csv | none | 
+| 3_supervised_learning.ipynb  | Builds a supervised model for target marketing |Udacity_MAILOUT_052018_TRAIN.csv, Udacity_MAILOUT_052018_TEST.csv | kaggle.csv | 
 
 <a name="p4"></a>
 ### Requirements 
+The notebooks have been run in 2 separate environments.
+
+1. 1_data_prep.ipynb.
+
+2. 2_unsupervised_learning.ipynb and 3_supervised_learning.ipynb.
 
 
 <a name="p3"></a>
 ### Blog post
 
-The results are presented to a technical audience on a blog post, here:
-
+The project overview, results and acknowledgements are presented to a technical audience on a blog post, here:
 https://medium.com/@emma.mckinley/airbnb-seattle-advanced-analytics-72804206934f
 
 
-
-<a name="p5"></a>
-### Acknowledgements 
