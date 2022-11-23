@@ -41,4 +41,3 @@ annotation_layer = (
 
 # Display both charts together
 st.altair_chart((chart + annotation_layer).interactive(), use_container_width=True)
-Made with Streamlit
